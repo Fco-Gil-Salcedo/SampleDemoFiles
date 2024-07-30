@@ -187,7 +187,7 @@ SELECT CONVERT(INT,CONVERT(VARCHAR,dl.FullDate,112)) as DateKey
 
    when 'Saturday' then 'Sábado'  
 
-   when 'Sunday' then 'Doming'  
+   when 'Sunday' then 'Domingo'  --It was written 'Doming'
 
 end as SpanishDayNameOfWeek 
 
@@ -207,7 +207,7 @@ end as SpanishDayNameOfWeek
 
    when 'Sunday' then 'Dimanche'  
 
-end as SpanishDayNameOfWeek 
+end as FrenchDayNameOfWeek  --The name was Spanish... when it is actually in french.
 
    ,DATEPART(d,dl.FullDate) as DayOfMonthNumber 
 
